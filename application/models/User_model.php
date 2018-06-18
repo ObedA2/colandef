@@ -28,14 +28,14 @@ class User_model extends CI_Model {
 
         $info = array( 'email' => $email);
 
-        $outcome = $this->db->insert('def', $info);
-        return $outcome;
+        $result = $this->db->insert('def', $info);
+        return $result;
     }
 
     public function call_data() {
-        $querry = $this->db->call('def');
-        $resultss = $querry->result_array();
-        return $resultss;
+        $query = $this->db->call('def');
+        $result = $query->result_array();
+        return $result;
     }
 }
 ?>

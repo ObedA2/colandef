@@ -26,7 +26,7 @@ class Users extends CI_Controller {
     }
 
     public function index() {
-        $this->load->view('signup');
+        $this->load->view('contact');
     }
 
     public function getUserData() {
